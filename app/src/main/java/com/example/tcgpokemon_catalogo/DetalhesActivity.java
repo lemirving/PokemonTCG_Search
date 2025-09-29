@@ -22,7 +22,7 @@ import net.tcgdex.sdk.models.subs.CardWeakRes;
 
 public class DetalhesActivity extends AppCompatActivity {
 
-    private static final String TAG = "DetalhesTAG"; // Adicione o TAG para logs
+    private static final String TAG = "DetalhesTAG";
     TCGdex api;
 
     private TextView detailNameTextView;

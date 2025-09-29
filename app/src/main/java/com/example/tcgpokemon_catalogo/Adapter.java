@@ -37,7 +37,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         if (position >= 0 && position < list.size()) {
             return list.get(position);
         }
-        return null; // Retorna null se a posição for inválida
+        return null;
     }
     public void setOnItemClickListener(OnItemClickListener listener) {
         this.listener = listener;
@@ -78,7 +78,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
                 .error(R.drawable.ic_error_image)
                 .into(holder.img);
 
-        // 3. Configuração do Texto (continua normal)
         holder.name.setText(cardHolder.getName() + " (" + cardHolder.getLocalId() + ")");
         holder.localId.setText("ID: " + cardHolder.getId());
     }

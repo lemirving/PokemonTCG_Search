@@ -91,7 +91,6 @@ public class MainActivity extends AppCompatActivity {
                             adapter = new Adapter(cardResumeList);
                             recyclerView.setAdapter(adapter);
                         } else {
-                            // Se o adapter já existe, apenas atualize a lista
                             adapter.updateList(cardResumeList);
                         }
 
@@ -111,7 +110,6 @@ public class MainActivity extends AppCompatActivity {
                             }
                             @Override
                             public void onItemLongClick(int position) {
-                                // Deixar vazio por enquanto
                             }
                         });
                     });
