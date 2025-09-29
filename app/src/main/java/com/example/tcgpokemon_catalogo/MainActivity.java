@@ -48,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycler_view);
 
 
-
         api = new TCGdex("en");
         getAllCards();
 
