@@ -5,30 +5,20 @@ import android.content.Intent;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView; // Adicione este e outros widgets que for usar
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.bumptech.glide.Glide;
-
 import net.tcgdex.sdk.TCGdex;
-import net.tcgdex.sdk.models.Card; // Precisamos do objeto Card completo!
-
-import java.util.ArrayList;
+import net.tcgdex.sdk.models.Card;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import net.tcgdex.sdk.models.Card;
-import net.tcgdex.sdk.models.SetResume;
 import net.tcgdex.sdk.models.subs.CardAttack;
-import net.tcgdex.sdk.models.subs.CardAbility;
 import net.tcgdex.sdk.models.subs.CardVariants;
 import net.tcgdex.sdk.models.subs.CardWeakRes;
 
-import net.tcgdex.sdk.Extension;
-import net.tcgdex.sdk.Quality;
 
-// ... imports ...
 
 public class DetalhesActivity extends AppCompatActivity {
 

@@ -128,14 +128,12 @@ public class MainActivity extends AppCompatActivity {
         executor.execute(() -> {
             try {
                 if(cardResumeList == null){
-                    // Se a lista principal ainda não carregou, não faz nada
                     return;
                 }
 
                 List<CardResume> filteredList = new ArrayList<>();
                 String lowerCaseName = name.toLowerCase();
 
-                // Lógica de Filtragem (Background Thread)
                 if (lowerCaseName.isEmpty()) {
                     filteredList.addAll(cardResumeList);
                 } else {
